@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiDi</title>
+    <link rel="stylesheet" href="rappi-estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <a href="#" class="logo">DiDi Food</a>
+            <nav>
+                <ul>
+                    <li><a href="#">Cliente</a></li>
+                    <li><a href="#">Comida</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </nav>
+            <a href="https://play.google.com/store/apps/details?id=com.didiglobal.passenger&hl=es-MX" class="btn-download">Descargar App</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="didi-carousel small">
+
+            <div class="carousel-container">
+                <div class="carousel-slide fade active">
+                    <img src="/img/b8af392aedc80c35c7a86831e0334482_fgraphic.png" alt="DiDi Safe Ride">
+                    <div class="carousel-caption">
+                        <h2>Viaja Seguro y Cómodo</h2>
+                        <p>Con DiDi, siempre sabes quién te lleva y cuánto pagarás.</p>
+                        <a href="#" class="btn-cta">Pide tu DiDi</a>
+                    </div>
+                </div>
+
+                <div class="carousel-slide fade">
+                    <img src="/img/DiDi-Food-llega-a-México-compressor.jpg" alt="Become a DiDi Driver">
+                    <div class="carousel-caption">
+                        <h2>Sé tu Propio Jefe</h2>
+                        <p>Regístrate como conductor y obtén ganancias adicionales.</p>
+                        <a href="#" class="btn-cta">Conducir con DiDi</a>
+                    </div>
+                </div>
+
+                <div class="carousel-slide fade">
+                    <img src="/img/images.jpg" alt="DiDi Food Delivery">
+                    <div class="carousel-caption">
+                        <h2>¿Hambre? DiDi Food</h2>
+                        <p>Pide a domicilio de tus restaurantes favoritos en minutos.</p>
+                        <a href="#" class="btn-cta">Pedir Comida</a>
+                    </div>
+                </div>
+
+                <div class="carousel-slide fade">
+                    <img src="/img/DiDi-Food-Navidad-para-Todos.jpg.webp" alt="DiDi Food Delivery">
+                    <div class="carousel-caption">
+                        <h2>¿Hambre? DiDi Food</h2>
+                        <p>Pide a domicilio de tus restaurantes favoritos en minutos.</p>
+                        <a href="#" class="btn-cta">Pedir Comida</a>
+                    </div>
+                </div>
+
+                <div class="carousel-slide fade">
+                    <img src="/img/proximas-semanas-uniran-establecimientos-marca.jpg" alt="DiDi Food Delivery">
+                    <div class="carousel-caption">
+                        <h2>¿Hambre? DiDi Food</h2>
+                        <p>Pide a domicilio de tus restaurantes favoritos en minutos.</p>
+                        <a href="#" class="btn-cta">Pedir Comida</a>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+        </section>
+
+        <section class="welcome-section container">
+            <h1>Bienvenidos a DiDi</h1>
+            <p>Tu plataforma integral de movilidad y servicios. Te conectamos con soluciones confiables y eficientes
+                para tu día a día.</p>
+        </section>
+
+        <section class="seccion-menu">
+            <h2>Explora por categoría</h2>
+            <div id="menu-comida" class="grid-comida">
+            </div>
+
+            <div id="modal-detalles" class="modal">
+                <div class="modal-contenido">
+                    <span class="cerrar-modal">&times;</span>
+                    <div id="detalle-comida"></div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 DiDi. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script-rappi.js"></script>
+</body>
+
+</html>

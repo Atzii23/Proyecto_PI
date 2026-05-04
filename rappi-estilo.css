@@ -1,0 +1,309 @@
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background-color: #f7f7f7;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6600; /* Color naranja de DiDi */
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+.btn-download {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Carrusel - Estilos Base */
+.didi-carousel {
+    overflow: hidden;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.carousel-slide {
+    display: none;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.carousel-caption h2 {
+    margin-top: 0;
+}
+
+.btn-cta {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Botones nav del carrusel */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Efectos */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+
+.did-carousel.small .carousel-container {
+    max-height: 550px; 
+}
+
+.didi-carousel.small .carousel-slide img {
+    height: 550px; 
+    object-fit: cover; 
+}
+
+.didi-carousel.small .carousel-caption {
+    bottom: 30px;
+    padding: 15px;
+}
+
+.didi-carousel.small .carousel-caption h2 {
+    font-size: 1.5em; 
+}
+
+.didi-carousel.small .carousel-caption p {
+    font-size: 1em; 
+}
+
+
+
+.welcome-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #f7f7f7;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+/*--------------------------API Diseño----------------------------------*/
+
+.grid-comida {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-didi {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.card-didi:hover {
+    transform: translateY(-5px);
+}
+
+.card-didi img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* hace q la imagen no se vea fea*/
+}
+
+.info-comida {
+    padding: 15px;
+}
+
+.info-comida h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.precio {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ff8c00; /* El color naranja característico */
+}
+
+/* ... (tus estilos anteriores se mantienen igual) ... */
+
+/* --- PERSONALIZACIÓN DEL SCROLLBAR --- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ff6600;
+}
+
+/* --- ESTILOS DEL MODAL (VENTANA EMERGENTE) --- */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 2000; 
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6); 
+    backdrop-filter: blur(8px); /* Efecto Premium */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal.mostrar {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-contenido {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.modal.mostrar .modal-contenido {
+    transform: scale(1);
+}
+
+.cerrar-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #999;
+}
+
+.cerrar-modal:hover { color: #ff6600; }
+
+.btn-ordenar-modal {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

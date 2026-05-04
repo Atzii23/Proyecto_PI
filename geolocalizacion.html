@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa DiDi - Selección de Ubicación</title>
+    
+    <!-- Librería de Mapas Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="geolocalizacion-style.css">
+</head>
+<body>
+
+    <div class="map-wrapper">
+        <!-- Botón flotante para regresar -->
+        <a href="javascript:history.back()" class="btn-regresar">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+
+        <!-- Panel lateral estilo DiDi -->
+        <aside class="panel-info">
+            <div class="brand">
+                <span class="didi-logo">DiDi</span>
+                <p>Geolocalización</p>
+            </div>
+            
+            <div class="detalle-ubicacion">
+                <label>Punto de Entrega</label>
+                <div class="input-fake">
+                    <i class="fas fa-map-marker-alt" style="color: #FF6600;"></i>
+                    <span id="txt-ubicacion">Haz clic en el mapa para cambiar</span>
+                </div>
+                <p class="instruccion">Toca cualquier punto en el mapa para mover tu ubicación.</p>
+            </div>
+
+            <!-- Botón opcional para GPS real -->
+            <button id="find-me" class="btn-gps">
+                <i class="fas fa-location-arrow"></i> Usar mi GPS
+            </button>
+        </aside>
+
+        <!-- Contenedor del Mapa -->
+        <div id="map"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="geolocalizacion-js.js"></script>
+</body>
+</html>

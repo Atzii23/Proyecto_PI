@@ -1,0 +1,98 @@
+:root {
+    --didi-orange: #FF6600;
+    --pure-white: #FFFFFF;
+    --soft-grey: #F0F0F0;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.map-wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+/* Botón Regresar */
+.btn-regresar {
+    position: absolute;
+    top: 20px;
+    left: 320px;
+    z-index: 1001;
+    background-color: var(--pure-white);
+    color: var(--didi-orange);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px var(--shadow);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-regresar:hover {
+    background-color: var(--didi-orange);
+    color: var(--pure-white);
+}
+
+/* Panel Lateral */
+.panel-info {
+    width: 300px;
+    background-color: var(--pure-white);
+    z-index: 1000;
+    padding: 30px 20px;
+    box-shadow: 4px 0 15px var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.didi-logo {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--didi-orange);
+}
+
+.detalle-ubicacion { margin-top: 40px; }
+.detalle-ubicacion label { font-size: 11px; font-weight: bold; color: #999; }
+
+.input-fake {
+    margin-top: 10px;
+    padding: 12px;
+    background: var(--soft-grey);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.instruccion {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.btn-gps {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: var(--didi-orange);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-gps:hover { background-color: #e65c00; }
+
+#map { flex-grow: 1; height: 100%; }
