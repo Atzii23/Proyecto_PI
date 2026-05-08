@@ -69,12 +69,12 @@ nav ul li a:hover {
 
 .header-actions {
     display: flex;
-    gap: 10px; /* Aquí controlas la distancia: 10px es bastante cerca */
+    gap: 10px; 
     align-items: center;
 }
 .btn-download, .btn-logout {
-    font-size: 14px; /* Ajusta según prefieras */
-    white-space: nowrap; /* Evita que el texto se rompa en dos líneas */
+    font-size: 14px; 
+    white-space: nowrap; 
 }
 /* Carrusel - Estilos Base */
 .didi-carousel {
