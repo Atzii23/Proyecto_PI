@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte DiDi - Ayuda</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="formulario-estilo.css">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+        <!-- Lado Izquierdo: Visual/Informativo -->
+        <div class="info-side">
+            <div class="overlay">
+                <span class="didi-logo-white">DiDi</span>
+                <h2>¿Necesitas ayuda?</h2>
+                <h3>Estamos para apoyarte</h3>
+                <p>Nuestra prioridad es tu seguridad y comodidad en cada trayecto.</p>
+            </div>
+        </div>
+
+        <!-- Lado Derecho: El Formulario -->
+        <div class="form-side">
+            <div class="support-container">
+                <a href="javascript:history.back()" class="btn-back">
+                    <i class="fas fa-chevron-left"></i> Volver
+                </a>
+
+                <div class="support-header">
+                    <h1>Centro de Ayuda</h1>
+                    <p>Completa los datos para iniciar un reporte.</p>
+                </div>
+
+                <form id="support-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="name" placeholder="Juan Pérez" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="categoria">¿Qué sucede?</label>
+                        <select id="categoria" name="category" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="mapa">Problemas con el Mapa</option>
+                            <option value="cuenta">Gestión de Cuenta</option>
+                            <option value="app">Error en la Aplicación</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Descripción</label>
+                        <textarea id="mensaje" name="message" rows="3" placeholder="Detalles del problema..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" id="btn-submit" class="btn-submit">Enviar Reporte</button>
+                </form>
+
+                <div id="success-msg" class="hidden">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Reporte enviado con éxito.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="formulario.js"></script>
+</body>
+
+</html>

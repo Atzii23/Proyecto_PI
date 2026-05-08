@@ -1,0 +1,97 @@
+:root {
+    --didi-orange: #FF6600;
+    --white: #FFFFFF;
+    --text: #333;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.main-wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Sección Naranja (Izquierda) */
+.info-side {
+    flex: 1;
+    background-color: var(--didi-orange);
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Un toque de textura */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 40px;
+}
+
+.overlay h2 { font-size: 3rem; margin-bottom: 10px; margin-top: 10px;}
+.didi-logo-white { font-size: 4rem; font-weight: 900; display: block; margin-bottom: 10px;  }
+
+/* Sección Formulario (Derecha) */
+.form-side {
+    flex: 1;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.support-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.btn-back {
+    text-decoration: none;
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.support-header h1 { color: var(--didi-orange); margin: 0; }
+.support-header p { color: #666; margin-bottom: 30px; }
+
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; font-size: 12px; font-weight: bold; margin-bottom: 5px; color: #444; }
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #eee;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--didi-orange);
+    background: white;
+    outline: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background: var(--didi-orange);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .info-side { display: none; } /* En celular solo mostramos el formulario */
+}
+
+.hidden { display: none; }
+#success-msg { text-align: center; color: #28a745; margin-top: 20px; }
