@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #ff4d4d, #ff944d);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    background: white;
+    padding: 30px;
+    width: 380px; /* Un poco más ancho para las pestañas */
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* --- Nuevos estilos para Pestañas --- */
+.pestañas {
+    display: flex;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.tab-boton {
+    flex: 1;
+    background: none;
+    color: #888;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0; /* Reset para que parezca pestaña */
+    transition: 0.3s;
+}
+
+.tab-boton:hover {
+    color: #ff4d4d;
+    background: #fff5f5;
+}
+
+.tab-boton.active {
+    color: #ff4d4d;
+    border-bottom: 3px solid #ff4d4d;
+    background: none;
+}
+/* ---------------------------------- */
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #ff4d4d;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 77, 77, 0.2);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+button[type="submit"]:hover {
+    background-color: #e63939;
+    transform: translateY(-2px);
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+}
+
+p a {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

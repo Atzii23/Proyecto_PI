@@ -58,7 +58,24 @@ nav ul li a:hover {
     text-decoration: none;
     font-weight: bold;
 }
+.btn-logout {
+     background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
+.header-actions {
+    display: flex;
+    gap: 10px; /* Aquí controlas la distancia: 10px es bastante cerca */
+    align-items: center;
+}
+.btn-download, .btn-logout {
+    font-size: 14px; /* Ajusta según prefieras */
+    white-space: nowrap; /* Evita que el texto se rompa en dos líneas */
+}
 /* Carrusel - Estilos Base */
 .didi-carousel {
     overflow: hidden;
