@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(/fonts/Roboto\ \(1\)/);
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(/fonts/Poppins/Poppins-Medium.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+:root {
+    --didi-orange: #FF6600;
+    --text-dark: #333;
+    --gray: #f4f4f7;
+}
+
+body {
+    background-color: var(--gray);
+    font-family: 'Montserrat';
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+p{
+    font-family: 'roboto';
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.header h1 { color: var(--didi-orange); margin: 0; }
+.header p { color: #666; font-size: 14px; margin-bottom: 25px; }
+
+.section-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    margin: 20px 0 10px;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--didi-orange);
+}
+
+input {
+    width: 100%;
+    padding: 12px 12px 12px 45px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: var(--didi-orange);
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.2);
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 15px;
+    background: var(--didi-orange);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.btn-enviar:hover { background: #e65c00; }
+
+#status { text-align: center; margin-top: 15px; font-size: 14px; }

@@ -34,8 +34,6 @@ function showSlides(n) {
 
 /*--------------------------------------------------------------*/
 
-/* ... (tu código del carrusel se queda igual arriba) ... */
-
 async function cargarCategoriasDiDi() {
     try {
         const respuesta = await fetch('https://www.themealdb.com/api/json/v1/1/categories.php');

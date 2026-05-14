@@ -1,8 +1,8 @@
-// 1. Configuración Inicial (CDMX por defecto)
-const centroInicial = [19.4326, -99.1332];
+// 1. Configuración Inicial 
+const centroInicial = [31.7420431, -106.4331578];
 const map = L.map('map', { zoomControl: false }).setView(centroInicial, 15);
 
-// 2. Capa de mapa clara (estilo minimalista)
+// 2. Capa de mapa clara 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; OpenStreetMap'
 }).addTo(map);
@@ -31,7 +31,7 @@ map.on('click', function(e) {
     document.getElementById('txt-ubicacion').innerText = `Lat: ${lat.toFixed(4)}, Lng: ${lng.toFixed(4)}`;
 });
 
-// 5. Función para usar GPS REAL
+// 5. Función para usar GPS REAL --no funciona en la página porque no permite la ubicacion debido al http no confiable
 document.getElementById('find-me').addEventListener('click', () => {
     if (!navigator.geolocation) {
         alert("Tu navegador no soporta GPS");

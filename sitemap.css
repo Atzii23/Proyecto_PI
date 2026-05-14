@@ -1,0 +1,117 @@
+/* Fuentes */
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(/fonts/Roboto\ \(1\)/);
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(/fonts/Poppins/Poppins-Medium.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+:root {
+    --didi-orange: #ff6600;
+    --bg-light: #f4f7f6;
+    --text-dark: #333;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+p, li{
+    font-family: 'Roboto';
+}
+
+h2{
+    font-family: 'Poppins';
+}
+
+.perfil-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--didi-orange);
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #666;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar li.active a, .sidebar a:hover {
+    background-color: #fff5ed;
+    color: var(--didi-orange);
+}
+
+/* Main Content */
+.perfil-main {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil-header h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+}
+
+/* Contenedor del Site Map */
+.map-card {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

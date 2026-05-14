@@ -1,7 +1,27 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(/fonts/Roboto\ \(1\)/);
+    font-weight: bold;
+    font-style: bold;
+}
+
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Montserrat';
+    font-weight: bold;
     margin: 0;
     color: #333;
+}
+
+p, li{
+    font-family: 'Roboto';
+    font-weight: lighter;
 }
 
 .container {
@@ -25,7 +45,7 @@ header .container {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #ff6600; /* Color naranja de DiDi */
+    color: #ff6600; 
     text-decoration: none;
 }
 
@@ -239,10 +259,9 @@ footer {
     display: block;
     margin-top: 10px;
     font-weight: bold;
-    color: #ff8c00; /* El color naranja característico */
+    color: #ff8c00; 
 }
 
-/* ... (tus estilos anteriores se mantienen igual) ... */
 
 /* --- PERSONALIZACIÓN DEL SCROLLBAR --- */
 ::-webkit-scrollbar {
@@ -268,7 +287,7 @@ footer {
     left: 0; top: 0;
     width: 100%; height: 100%;
     background-color: rgba(0,0,0,0.6); 
-    backdrop-filter: blur(8px); /* Efecto Premium */
+    backdrop-filter: blur(8px); 
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -324,3 +343,4 @@ footer {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+

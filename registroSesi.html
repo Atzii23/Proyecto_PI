@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Accesos - DiDi Control</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="registroSesi.css">
+</head>
+<body>
+    <div class="card"> 
+        <div class="header">
+            <h1><i class="fas fa-history"></i> Seguridad</h1>
+            <p>Inicios de sesión recientes en tu cuenta.</p>
+        </div>
+        
+        <div id="lista-entradas">
+            <!-- Se llena con el JS -->
+            <p style="text-align:center; color:#999;">Cargando historial...</p>
+        </div>
+
+        <button onclick="window.history.back()" class="btn-enviar" style="margin-top:20px; background:#666;">
+            Volver
+        </button>
+    </div>
+    <script src="registroSesi.js"></script>
+</body>
+</html>

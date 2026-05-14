@@ -1,39 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil del Restaurante - DiDi Control</title>
+    <title>Perfil - DiDi Control</title>
     <link rel="stylesheet" href="css/estilo-perfil.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 
-<div class="perfil-container">
-    <aside class="sidebar">
-        <div class="logo">DiDi</div>
-        <nav>
-            <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
-                <li class="active"><a href="perfil.html"><i class="fas fa-user"></i> Mi Contacto</a></li>
-                <!--<li><a href="#"><i class="fas fa-utensils"></i> Menú</a></li>-->
-                <li><a href="geolocalizacion.html"><i class="fa fa-map-marker"></i> Geolacalización</a></li>
-                <li><a href="#"><i class="fas fa-chart-line"></i> Analytics</a></li>
+    <div class="perfil-container">
+        <aside class="sidebar">
+            <div class="logo">DiDi</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li class="active"><a href="perfil.html"><i class="fas fa-user"></i> Mi Contacto</a></li>
+                    <!--<li><a href="#"><i class="fas fa-utensils"></i> Menú</a></li>-->
+                    <li><a href="geolocalizacion.html"><i class="fa fa-map-marker"></i> Geolacalización</a></li>
+                    <li><a href="sitemap.html"><i class="fa-solid fa-sitemap"></i> Site map</a></li>
+
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="perfil-main">
+            <header class="perfil-header">
+                <h1>Mi contacto</h1>
+            </header>
+
+            <section class="perfil-grid">
+                <div class="perfil-foto">
+                    <img src="img/Alejandra García (1).png" alt="Alejandra García">
+                </div>
+
+                <div class="perfil-info">
+                    <div class="info-card">
+                        <h2>Alejandra García</h2>
+                        <p><i class="fas fa-envelope"></i> alegarey1023@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +52 656 626 5181</p>
+                        <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+                        <h3>Mis Redes Sociales</h3>
+                        <div class="redes-sociales">
+                            <a href="https://www.facebook.com/alejandra.garcia.229531?locale=es_LA" target="_blank"
+                                class="btn-social facebook">
+                                <i class="fab fa-facebook-f" style="color: #eee"></i> Facebook
+                            </a>
+                            <a href="https://www.instagram.com/springtrap.css/" target="_blank"
+                                class="btn-social instagram">
+                                <i class="fab fa-instagram" style="color: #eee"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="color-palette-card">
+                <h3>Paleta de Colores del Proyecto</h3>
+                <div class="palette-grid">
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #FF6600;"></div>
+                        <span>#FF6600</span>
+                        <small>Didi Orange</small>
+                    </div>
+
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #333333;"></div>
+                        <span>#333333</span>
+                        <small>Text Dark</small>
+                    </div>
+
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #F4F7F6;"></div>
+                        <span>#F4F7F6</span>
+                        <small>Background</small>
+                    </div>
+
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #FFFFFF; border: 1px solid #ddd;"></div>
+                        <span>#FFFFFF</span>
+                        <small>Pure White</small>
+                    </div>
+
+                </div>
                 
-            </ul>
-        </nav>
-    </aside>
+            </div>
 
-    <main class="perfil-main">
-        <header class="perfil-header">
-            <h1>Contacto</h1>
-        </header>
+        </main>
 
-        <section class="perfil-grid">
-            <img src="img/Alejandra García.png" width="450px" height="560px" alt="Logo Restaurante">
-        </section>
-    </main>
-</div>
+
+
+    </div>
 
 </body>
+
 </html>

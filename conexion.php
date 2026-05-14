@@ -17,13 +17,13 @@ $conn->set_charset("utf8mb4");
 // 2. Verificar que los datos vienen del formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
-    // Recibir datos (ajustado a los nombres de tu HTML)
+    // Recibir datos 
     $nombre = $_POST['nombre'];
     $correo = $_POST['correo'];
-    $pass   = $_POST['password']; // Asegúrate que en el HTML diga name="password"
+    $pass   = $_POST['password'];
 
-    // 3. Preparar la consulta SQL (suponiendo que tu tabla se llama 'usuarios')
-    // Es mejor usar sentencias preparadas por seguridad
+    // 3. Preparar la consulta SQL 
+    
     $sql = "INSERT INTO usuarios (nombre, correo, password) VALUES (?, ?, ?)";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("sss", $nombre, $correo, $pass);
